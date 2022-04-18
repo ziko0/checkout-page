@@ -1,0 +1,281 @@
+:root{
+    --def-font: 'Montserrat', sans-serif;
+    --logo-color: #4E5150;
+    --gray-1: #333333;
+    --gray-2: #4F4F4F;
+    --gray-3: #828282;
+    --gray-4: #4E5150;
+    --gray-5: #E0E0E0;
+    --gray-6: #BDBDBD;
+    --gray-7: #828282;
+    --gray-8: #F2F2F2;
+    --btn-color: #F2994A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.infromation{
+    grid-column: 1 / span 8;
+}
+
+.items{
+    grid-column: 5 / span 12;
+}
+
+/* default styles */
+
+.title{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--gray-4);
+    margin-bottom: 3rem;
+}
+
+.sub-title{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    columns: var(--gray-1);
+}
+
+label{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 1rem;
+    color: var(--gray-2);
+}
+
+input::placeholder, i{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-7);
+}
+
+input{
+    width: 80%;
+    outline: none;
+    border: none;
+    font-family: var(--def-font);
+    color: var(--gray-1);
+}
+
+.information-input{
+    width: 465px;
+    height: 56px;
+    border: 1px solid var(--gray-3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+
+/* about items section default style */
+.new-price{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--btn-color);
+}
+
+.older-price{
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--gray-4);
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 134px;
+    height: 52px;
+
+    border: 1px solid var(--gray-3);
+    border-radius: 12px;
+
+}
+
+.mines, 
+.plus{
+    display: block;
+    background-color: var(--gray-5);
+    color: var(--gray-3);
+    padding-top: 0.1rem;
+    text-align: center;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+
+/* information section */
+
+.infromation{
+}
+
+.information-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+
+
+
+
+/* shipping */
+.shipping-information{
+    margin-top: 3rem;
+}
+
+.sub-title{
+    margin-bottom: 1rem;
+}
+
+.occupation{
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+    width: 85%;
+}
+
+
+.input-wrapper{
+    width: 100%;    
+}
+
+.input-wrapper > .information-input{
+    width: 228px;
+}
+
+select{
+    border: none;
+    background-color: inherit;
+    width: 100%;
+}
+
+.btn{
+    width: 166px;
+    height: 54px;
+    background-color: var(--btn-color);
+
+    font-family: var(--def-font);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    margin-left: 18.7rem;
+}
+
+
+
+/* items style */
+
+.items{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.order-items{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.items-wrapper{
+    width: 383px;
+    height: 575px;
+    background-color: var(--gray-8);
+    margin-top:5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 15px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    /* object-fit: cover; */
+}
+
+.img-wrapper{
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+}
+
+/* about item */
+.about-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-title{
+    font-size: 16px;
+    color: var(--gray-4);
+    margin: 0;
+}
+
+.item{
+    display: flex;
+    gap: 20px;
+}
+
+/* sum */
+.sum{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3rem;
+    height: 200px;
+}
+
+.shipped,
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: var(--def-font);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: var(--gray-1);
+}
+
+.line{
+    border: 1px solid var(--gray-6);
+    margin-bottom: 0.7rem;
+}
+
