@@ -1,40 +1,49 @@
 @media (max-width: 568px){
-   
     .container{
-        display: flex;
         flex-direction: column-reverse;
-        align-items: flex-start;
-        height: 100vh;
+        align-items: center;
         overflow-y: scroll;
-        margin: 0;
-        padding: 0 15px;
-    }
-
-    .items{
-        align-self: center;
-        position: absolute;
-        top: 0;
-        margin: 0;
-        padding: 0;
     }
 
     .information{
-        align-self: center;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 45rem;
-        left: -2.5rem;
+        width: 100%;
     }
 
+    .items{
+        width: 100%;
+    }
+
+    /* end of default style */
+    
+}
+
+@media (max-width: 375px){
+    .container{
+        align-items: flex-start;
+    }
     .checkout-title{
-       position: absolute;
-       top:-104%;
+        margin: 0.5rem;        
     }
-  
+    .order-items{
+        width: 350px;
+        height: 489px;
+    }
 
-    /* inputs resize */
-    .information-inputs{
-        width: 200px;
+    .information-input{
+        width: 349px;
+        height: 40px;
+    }
+
+    .country-input,
+    .postal-input{
+        width: 162px;
+    }
+
+    .btn{
+        margin: 0;
+    }
+
+    .items-wrapper{
+        padding: 0;
     }
 }

@@ -8,20 +8,21 @@
     <!-- own css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-     <!-- google fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
-     <!-- fontawsome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     
-    <!-- container -->
-    <div class="container">
-        
+     <!-- container -->
+     <h1 class="title checkout-title">Checkout</h1>
+
+     <div class="container">
+
         <section class="information">
             <div class="information-wrapper">
-                <h1 class="title checkout-title">Checkout</h1>
-                <form class="info-from">
+                <form class="info-form">
                     
                     <label for="email">E-mail</label>
                     <div class="information-input email-input">
@@ -332,9 +333,9 @@
                             
                             <div class="input-wrapper">
                                 <label for="postal">Postal Code</label>
-                                <div class="information-input email-input">
+                                <div class="information-input postal-input">
                                     <i class="fa-solid fa-envelopes-bulk"></i>
-                                    <input type="text" placeholder="Your postal code..">
+                                    <input type="text" placeholder="Your postal code.." class="postalcode">
                                 </div>
                             </div>
                         </div>
@@ -356,7 +357,7 @@
                 <div class="order-items">
                     <div class="item backbag">
                         <div class="img-wrapper">
-                            <img src="./img/photo1.png" alt="bacgback" class="bag">
+                            <img src="./images/photo1.png" alt="bacgback" class="bag">
                         </div>
                         <div class="about-item">
                             <h1 class="title item-title">Vintage Backbag</h1>
@@ -374,7 +375,7 @@
 
                     <div class="item shoe">
                         <div class="img-wrapper">
-                            <img src="./img/photo2.png" alt="bacgback" class="bag">
+                            <img src="./images/photo2.png" alt="bacgback" class="bag">
                         </div>
                         <div class="about-item">
                             <h1 class="title item-title">Vintage Backbag</h1>
@@ -389,14 +390,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="sum">
+                        <hr class="line">
+                        <div class="shipped"><h1>Shipping</h1> <span class="shipping-price">$19</span></div>
+                        <hr class="line">
+                        <div class="total"><h1>Total</h1> <span class="total-price">$148.98</span></div>
+                    </div>
                 </div>
 
-                <div class="sum">
-                    <hr class="line">
-                    <div class="shipped"><h1>Shipping</h1> <span class="shipping-price">$19</span></div>
-                    <hr class="line">
-                    <div class="total"><h1>Total</h1> <span class="total-price">$148.98</span></div>
-                </div>
+            
             </div>
 
         </section>
